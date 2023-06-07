@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HRMS : Adding New Elements</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">HRMS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="My-first-space_196829.html">My first space</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            HRMS : Adding New Elements
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> shehab ahmed khalil</span>, last modified on Jun 07, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <div id="expander-2126396055" class="expand-container"><div id="expander-control-2126396055" class="expand-control"><span class="expand-control-icon"><img style="vertical-align:middle;" class="expand-control-image" src="images/icons/grey_arrow_down.png"></span><span class="expand-control-text">Adding new page</span></div><div id="expander-content-2126396055" class="expand-content"><ul><li><p>In the pages directory, create a new folder with the name of the page (capitalized) and create a JS file named index.js</p><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="108" loading="lazy" src="attachments/33167/196961.png?width=108" data-image-src="attachments/33167/196961.png" data-height="320" data-width="145" data-unresolved-comment-count="0" data-linked-resource-id="196961" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="newpage.PNG" data-base-url="https://hrms-doc.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="33167" data-linked-resource-container-version="5" data-media-id="f4d9f9c2-5b33-4788-a249-95516e08ffde" data-media-type="file"></span><p>.</p></li><li><p>Inside the JS file, create a component with the name of the page and export it as default</p></li><li><p>Inside App.js, based on the page (requires authentication or not) either add a route directly inside the Routes wrapper (case no authentication), or nest it inside the PrivateRoute Route </p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">      &lt;Routes&gt;
+        &lt;Route path=&quot;/login&quot; element={&lt;Login /&gt;} /&gt;
+        &lt;Route element={&lt;PrivateRoute /&gt;}&gt;
+          &lt;Route path=&quot;/&quot; element={&lt;Home /&gt;} /&gt;
+          &lt;Route
+            path=&quot;/dashboard&quot;
+            element={&lt;PrivateRoute element={&lt;Dashboard /&gt;} /&gt;}
+          /&gt;
+        &lt;/Route&gt;
+      &lt;/Routes&gt;</pre>
+</div></div></li></ul></div></div><div id="expander-1831947223" class="expand-container"><div id="expander-control-1831947223" class="expand-control"><span class="expand-control-icon"><img style="vertical-align:middle;" class="expand-control-image" src="images/icons/grey_arrow_down.png"></span><span class="expand-control-text">Adding a shared component (only components that are shared with different pages are considered shared components)</span></div><div id="expander-content-1831947223" class="expand-content"><ul><li><p>In the Components directory, create a new folder with the name of the Component (capitalized) and create a JS file named index.js</p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/33167/360501.png" data-image-src="attachments/33167/360501.png" data-height="190" data-width="148" data-unresolved-comment-count="0" data-linked-resource-id="360501" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="newcomponent.PNG" data-base-url="https://hrms-doc.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="33167" data-linked-resource-container-version="5" data-media-id="70e294ca-b28a-4c8b-ba7b-83033064b8a6" data-media-type="file"></span></li><li><p>Inside JS file right down the component with the same name as the file name and export it as default.</p></li><li><p>The component should be documented as the following</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">/**
+ * @param {Array} prop1
+ * @param {Boolean} prop2
+ * @returns
+ */
+const NewComponent = ({ prop1, prop2 }) =&gt; {};
+export default NewComponent;</pre>
+</div></div></li></ul></div></div><p /><p />
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/33167/196961.png">newpage.PNG</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/33167/360501.png">newcomponent.PNG</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jun 07, 2023 15:18</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

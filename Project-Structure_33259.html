@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HRMS : Project Structure</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">HRMS</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="My-first-space_196829.html">My first space</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            HRMS : Project Structure
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> shehab ahmed khalil</span>, last modified on Jun 07, 2023
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" loading="lazy" src="attachments/33259/33266.png" data-image-src="attachments/33259/33266.png" data-height="496" data-width="586" data-unresolved-comment-count="0" data-linked-resource-id="33266" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="structure.PNG" data-base-url="https://hrms-doc.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="33259" data-linked-resource-container-version="2" data-media-id="ce4e598c-32d5-45ef-b3b0-140808574493" data-media-type="file"></span><div id="expander-1963744523" class="expand-container"><div id="expander-control-1963744523" class="expand-control"><span class="expand-control-icon"><img style="vertical-align:middle;" class="expand-control-image" src="images/icons/grey_arrow_down.png"></span><span class="expand-control-text">Components</span></div><div id="expander-content-1963744523" class="expand-content"><ul><li><p>This directory is for shared components that are used inside more than one page (main route).</p></li><li><p>Each component has to be inside a folder with the name of the component (capitalized) that contains a main js file (index.js).</p></li><li><p>The component could be built using other shared components, or child components.</p></li><li><p>Unique child components must be placed inside the component folder</p></li><li><p>All components must follow the best practices and the right conventions as provided in the general guidelines page.</p></li></ul></div></div><div id="expander-128999699" class="expand-container"><div id="expander-control-128999699" class="expand-control"><span class="expand-control-icon"><img style="vertical-align:middle;" class="expand-control-image" src="images/icons/grey_arrow_down.png"></span><span class="expand-control-text">Hooks</span></div><div id="expander-content-128999699" class="expand-content"><ul><li><p>This directory is for custom hooks in the app</p></li><li><p>All hooks must follow the best practices and the right conventions as provided in the general guidelines page.</p></li></ul></div></div><div id="expander-1992337044" class="expand-container"><div id="expander-control-1992337044" class="expand-control"><span class="expand-control-icon"><img style="vertical-align:middle;" class="expand-control-image" src="images/icons/grey_arrow_down.png"></span><span class="expand-control-text">Pages</span></div><div id="expander-content-1992337044" class="expand-content"><ul><li><p>This directory is for the main pages in the app and not for small components.</p></li><li><p>Each page should have it’s own directory (capitalized) inside /pages directory and a JS file named index.js (main file)</p></li><li><p>A page could have dedicated child or nested components, and they should be placed in the same directory as the index.js file as long as they aren’t shared with other pages.</p></li></ul></div></div><div id="expander-600821739" class="expand-container"><div id="expander-control-600821739" class="expand-control"><span class="expand-control-icon"><img style="vertical-align:middle;" class="expand-control-image" src="images/icons/grey_arrow_down.png"></span><span class="expand-control-text">Services</span></div><div id="expander-content-600821739" class="expand-content"><ul><li><p>This directory is for services that will be integrated in different pages</p></li><li><p>Each service should be created in a separate directory that contains a file with the service name (Fields.service.js)</p></li><li><p>Each service will contain different services (getFields, getField, updateField, deleteField, ..etc) and all these services should be exported</p></li><li><p>These services will use react-query utils and functions to retrieve and modify data.</p></li></ul></div></div><div id="expander-1126655742" class="expand-container"><div id="expander-control-1126655742" class="expand-control"><span class="expand-control-icon"><img style="vertical-align:middle;" class="expand-control-image" src="images/icons/grey_arrow_down.png"></span><span class="expand-control-text">Utils</span></div><div id="expander-content-1126655742" class="expand-content"><ul><li><p>This directory is for helper functions and utilities that will be used across the app.</p></li></ul></div></div><div id="expander-357154311" class="expand-container"><div id="expander-control-357154311" class="expand-control"><span class="expand-control-icon"><img style="vertical-align:middle;" class="expand-control-image" src="images/icons/grey_arrow_down.png"></span><span class="expand-control-text">Internationalization</span></div><div id="expander-content-357154311" class="expand-content"><span class="confluence-embedded-file-wrapper image-center-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image image-center" width="340" loading="lazy" src="attachments/33259/33304.png?width=340" data-image-src="attachments/33259/33304.png" data-height="73" data-width="188" data-unresolved-comment-count="0" data-linked-resource-id="33304" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="internatio.PNG" data-base-url="https://hrms-doc.atlassian.net/wiki" data-linked-resource-content-type="image/png" data-linked-resource-container-id="33259" data-linked-resource-container-version="2" data-media-id="a0dd6da8-3ad7-44ea-9b09-15e5a9b6d090" data-media-type="file"></span><ul><li><p>This directory is dedicated for internationalization</p></li><li><p>Each page should have a json file that will contain en, ar and any other language code objects, these objects will contain the keys and values for translations in this page.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">{
+  &quot;en&quot;: {
+    &quot;login.title&quot;: &quot;Login&quot;,
+    &quot;login.username&quot;: &quot;Username&quot;,
+    &quot;login.password&quot;: &quot;Password&quot;,
+    &quot;login.button&quot;: &quot;Login&quot;
+  }
+}</pre>
+</div></div></li><li><p>After creating a file for the page, this file should be imported inside the i18n file as follows</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="syntaxhighlighter-pre" data-syntaxhighlighter-params="brush: java; gutter: false; theme: Confluence" data-theme="Confluence">  resources: {
+    en: {
+      translation: {
+        ...login.en,
+      },
+    },
+  },</pre>
+</div></div></li></ul></div></div>
+                    </div>
+
+                                        <div class="pageSection group">
+                        <div class="pageSectionHeader">
+                            <h2 id="attachments" class="pageSectionTitle">Attachments:</h2>
+                        </div>
+
+                        <div class="greybox" align="left">
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/33259/33266.png">structure.PNG</a> (image/png)
+                                <br/>
+                                                            <img src="images/icons/bullet_blue.gif" height="8" width="8" alt=""/>
+                                <a href="attachments/33259/33304.png">internatio.PNG</a> (image/png)
+                                <br/>
+                                                    </div>
+                    </div>
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on Jun 07, 2023 15:18</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>
